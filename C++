@@ -1,0 +1,15 @@
+## 内存分配模型
+	代码区、全局区、堆、栈
+
+## 深浅拷贝构造函数
+```cpp
+//浅拷贝
+Person(const Person &p){
+	height = p.height;// int *height = NULL;
+}
+//深拷贝
+Person(const Person &p){
+	height = new int(*p.height);// int *height = NULL;
+}
+```
+## 
